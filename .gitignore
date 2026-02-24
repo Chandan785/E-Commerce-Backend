@@ -1,0 +1,64 @@
+# Node modules
+node_modules/
+
+# Environment files
+.env
+.env.*
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+
+# Build outputs
+dist/
+build/
+coverage/
+.nyc_output/
+
+# Editor directories and files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# OS files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Optional npm cache
+.npm/
+
+# Yarn v2/berry
+.yarn/*
+.pnp.*
+
+# Docker
+docker-compose.override.yml
+
+# Misc
+*.log.*
+*.local
+
+# Seed or local data
+/data/
+
+# Lock files (uncomment if you prefer to ignore lockfiles)
+# package-lock.json
+# yarn.lock
