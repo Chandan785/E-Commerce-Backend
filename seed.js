@@ -36,10 +36,14 @@ const seedData = async () => {
 
     await Product.insertMany(seedProducts);
 
-    console.log("✅ Products Seeded Successfully");
+    if (process.env.NODE_ENV !== "production") {
+      console.log("✅ Products Seeded Successfully");
+    }
     process.exit();
   } catch (error) {
-    console.error("❌ Seeding Failed:", error.message);
+    if (process.env.NODE_ENV !== "production") {
+      console.error("❌ Seeding Failed:", error.message);
+    }
     process.exit(1);
   }
 };

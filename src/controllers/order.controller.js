@@ -19,6 +19,7 @@ export const createOrder = async (req, res, next) => {
     }
 
     let totalAmount = 0;
+    const orderItems = [];
 
     for (const item of cart.items) {
       const product = await Product.findById(item.product).session(session);
@@ -34,8 +35,16 @@ export const createOrder = async (req, res, next) => {
         );
       }
 
+      // Deduct stock
       product.stock -= item.quantity;
       await product.save({ session });
+
+      // Push price snapshot
+      orderItems.push({
+        product: product._id,
+        quantity: item.quantity,
+        price: product.price   // 🔥 THIS WAS MISSING
+      });
 
       totalAmount += product.price * item.quantity;
     }
@@ -45,13 +54,14 @@ export const createOrder = async (req, res, next) => {
         {
           userId,
           orderId: `ord_${uuidv4()}`,
-          items: cart.items,
+          items: orderItems,  // 🔥 use fixed items
           totalAmount
         }
       ],
       { session }
     );
 
+    // Clear cart
     cart.items = [];
     await cart.save({ session });
 
@@ -65,6 +75,7 @@ export const createOrder = async (req, res, next) => {
         totalAmount
       }
     });
+
   } catch (error) {
     await session.abortTransaction();
     session.endSession();

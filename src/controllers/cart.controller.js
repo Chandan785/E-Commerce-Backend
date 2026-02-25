@@ -1,3 +1,4 @@
+import mongoose from "mongoose";
 import Cart from "../models/Cart.model.js";
 import Product from "../models/Product.model.js";
 import AppError from "../utils/AppError.js";
@@ -8,6 +9,11 @@ export const addToCart = async (req, res, next) => {
 
     if (!userId || !productId || !quantity || quantity <= 0) {
       return next(new AppError("Invalid input", 400));
+    }
+
+    // guard: productId must be a valid MongoDB ObjectId
+    if (!mongoose.Types.ObjectId.isValid(productId)) {
+      return next(new AppError("Invalid productId", 400));
     }
 
     const product = await Product.findById(productId);
