@@ -15,8 +15,11 @@ This project implements complete product listing, cart management, and order pro
 ---
 ## 📸 Postman Examples (Screenshots)
 
+<<<<<<< HEAD
 ## 📸 Postman Examples (Screenshots)
 
+=======
+>>>>>>> ed17069 (Remove node_modules from tracking)
 ### Add To Cart
 ![Add To Cart](assets/postman/add-to-cart.png)
 
@@ -37,8 +40,11 @@ This project implements complete product listing, cart management, and order pro
 
 ### Get All Products
 ![Get All Products](assets/postman/get-products.png)
+<<<<<<< HEAD
 ---
 
+=======
+>>>>>>> ed17069 (Remove node_modules from tracking)
 ---
 
 ## 📂 Project Structure
