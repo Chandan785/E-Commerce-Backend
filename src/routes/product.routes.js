@@ -8,10 +8,6 @@ const router = express.Router();
 
 /**
  * GET /api/products
- * Query params:
- *  - page
- *  - limit
- *  - search
  */
 router.get("/", getProducts);
 

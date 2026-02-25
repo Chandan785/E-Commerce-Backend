@@ -11,50 +11,71 @@ This project implements complete product listing, cart management, and order pro
 - Node.js
 - Express.js
 - MongoDB Atlas
+---
+---
 ## 📸 Postman Examples (Screenshots)
-- Mongoose
-- dotenv
-- UUID
-- Nodemon
+
+Below are example Postman screenshots. To display images in the README you must place the PNG files in the repository at the paths shown below.
+
+- Add To Cart: `assets/postman/add-to-cart.png`  
+- Get Cart: `assets/postman/get-cart.png`  
+- Remove From Cart: `assets/postman/remove-from-cart.png`  
+- Create Order: `assets/postman/create-order.png`  
+- Health Check: `assets/postman/health-check.png`  
+- Get Single Product: `assets/postman/get-product.png`  
+- Get All Products: `assets/postman/get-products.png`
+
+If an image is missing you will see a broken image on GitHub — add the file to `assets/postman/` and re-push.
+
+### Add To Cart
+![Add To Cart](assets/postman/add-to-cart.png)
+
+### Get Cart
+![Get Cart](assets/postman/get-cart.png)
+
+### Create Order
+![Create Order](assets/postman/create-order.png)
 
 ---
 
 ## 📂 Project Structure
 
-src/
-│
-├── config/
-│   └── db.js
-│
-├── controllers/
-│   ├── product.controller.js
-│   ├── cart.controller.js
-│   └── order.controller.js
-│
-├── middleware/
-│   ├── errorHandler.js
-	 └── validate.js
-│
-├── models/
-│   ├── Product.model.js
-│   ├── Cart.model.js
-│   └── Order.model.js
-│
-├── routes/
-│   ├── product.routes.js
-│   ├── cart.routes.js
-│   └── order.routes.js
-│
-├── utils/
-│   └── AppError.js
-│
-├── app.js
-│
-server.js
-seed.js
-.env
-package.json
+Use the tree below for a clean, copyable project structure:
 
+```text
+e-commarce/
+├─ README.md
+├─ package.json
+├─ .env.example
+├─ server.js
+├─ seed.js
+├─ assets/
+│  └─ postman/
+│     └─ <your-postman-screenshots>.png
+└─ src/
+	├─ app.js
+	├─ config/
+	│  └─ db.js
+	├─ controllers/
+	│  ├─ product.controller.js
+	│  ├─ cart.controller.js
+	│  └─ order.controller.js
+	├─ middleware/
+	│  ├─ errorHandler.js
+	│  └─ validate.js
+	├─ models/
+	│  ├─ Product.model.js
+	│  ├─ Cart.model.js
+	│  └─ Order.model.js
+	├─ routes/
+	│  ├─ product.routes.js
+	│  ├─ cart.routes.js
+	│  └─ order.routes.js
+	└─ utils/
+		└─ AppError.js
+```
+
+Placeholders above are intentionally generic — they reproduce the structure exactly and will render cleanly on GitHub.
 
 ---
 
@@ -63,7 +84,7 @@ package.json
 ## 1️⃣ Clone Repository
 
 ```bash
-git clone <your-repository-link>
+git clone https://github.com/Chandan785/E-Commerce-Backend.git
 cd ecommerce-backend
 ```
 

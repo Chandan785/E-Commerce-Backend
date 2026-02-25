@@ -9,13 +9,9 @@ const connectDB = async () => {
 
     await mongoose.connect(uri);
 
-    if (process.env.NODE_ENV !== "production") {
-      console.log("MongoDB Connected");
-    }
+    console.log("MongoDB Connected");
   } catch (error) {
-    if (process.env.NODE_ENV !== "production") {
-      console.error("DB connection failed:", error.message);
-    }
+    console.error("DB connection failed:", error.message);
     process.exit(1);
   }
 };
