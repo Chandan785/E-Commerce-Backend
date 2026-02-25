@@ -5,6 +5,7 @@ Production-ready E-Commerce Backend built using **Node.js, Express, and MongoDB 
 This project implements complete product listing, cart management, and order processing with stock validation and transaction safety.
 
 ---
+## live deploy link:- https://e-commerce-backend-ncnl.onrender.com
 
 ## 🚀 Tech Stack
 
@@ -12,14 +13,8 @@ This project implements complete product listing, cart management, and order pro
 - Express.js
 - MongoDB Atlas
 ---
----
 ## 📸 Postman Examples (Screenshots)
 
-<<<<<<< HEAD
-## 📸 Postman Examples (Screenshots)
-
-=======
->>>>>>> ed17069 (Remove node_modules from tracking)
 ### Add To Cart
 ![Add To Cart](assets/postman/add-to-cart.png)
 
@@ -40,11 +35,6 @@ This project implements complete product listing, cart management, and order pro
 
 ### Get All Products
 ![Get All Products](assets/postman/get-products.png)
-<<<<<<< HEAD
----
-
-=======
->>>>>>> ed17069 (Remove node_modules from tracking)
 ---
 
 ## 📂 Project Structure
@@ -153,10 +143,6 @@ Server runs at: http://localhost:5000
 🟢 PRODUCTS
 1️⃣ **Get All Products**
 - GET /api/products
-
-Optional query parameters: `page`, `limit`, `search`
-
-Example: `GET /api/products?page=1&limit=5&search=iphone`
 
 2️⃣ **Get Single Product**
 - GET /api/products/:id
@@ -272,5 +258,6 @@ Created for CTASI E-Commerce Engineering Assignment.
 
 
  
+
 
 
