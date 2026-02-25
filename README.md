@@ -15,17 +15,7 @@ This project implements complete product listing, cart management, and order pro
 ---
 ## 📸 Postman Examples (Screenshots)
 
-Below are example Postman screenshots. To display images in the README you must place the PNG files in the repository at the paths shown below.
-
-- Add To Cart: `assets/postman/add-to-cart.png`  
-- Get Cart: `assets/postman/get-cart.png`  
-- Remove From Cart: `assets/postman/remove-from-cart.png`  
-- Create Order: `assets/postman/create-order.png`  
-- Health Check: `assets/postman/health-check.png`  
-- Get Single Product: `assets/postman/get-product.png`  
-- Get All Products: `assets/postman/get-products.png`
-
-If an image is missing you will see a broken image on GitHub — add the file to `assets/postman/` and re-push.
+## 📸 Postman Examples (Screenshots)
 
 ### Add To Cart
 ![Add To Cart](assets/postman/add-to-cart.png)
@@ -33,8 +23,21 @@ If an image is missing you will see a broken image on GitHub — add the file to
 ### Get Cart
 ![Get Cart](assets/postman/get-cart.png)
 
+### Remove From Cart
+![Remove From Cart](assets/postman/remove-from-cart.png)
+
 ### Create Order
 ![Create Order](assets/postman/create-order.png)
+
+### Health Check
+![Health Check](assets/postman/health-check.png)
+
+### Get Single Product
+![Get Single Product](assets/postman/get-product.png)
+
+### Get All Products
+![Get All Products](assets/postman/get-products.png)
+---
 
 ---
 
@@ -263,4 +266,5 @@ Created for CTASI E-Commerce Engineering Assignment.
 
 
  
+
 
